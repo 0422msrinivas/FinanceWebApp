@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Results</title>
+</head>
+
+<body>
+    <h1>Model Evaluation Results</h1>
+
+    <h3>Accuracy: {{ accuracy }}%</h3>
+    <h4>Classification Report:</h4>
+    <pre>{{ report }}</pre>
+
+    <h4>Confusion Matrix:</h4>
+    <img src="{{ cm_graph }}" alt="Confusion Matrix Heatmap">
+
+
+
+    <h4>Graphs for Categorical Features:</h4>
+    <h5>Gender Distribution:</h5>
+    <img src="{{ gender_graph }}" alt="Gender Distribution">
+
+    <h5>Married Distribution:</h5>
+    <img src="{{ married_graph }}" alt="Married Distribution">
+
+    <h5>Dependents Distribution:</h5>
+    <img src="{{ dependents_graph }}" alt="Dependents Distribution">
+
+    <h5>Self Employed Distribution:</h5>
+    <img src="{{ self_employed_graph }}" alt="Self Employed Distribution">
+
+    <h5>Credit History Distribution:</h5>
+    <img src="{{ credit_history_graph }}" alt="Credit History Distribution">
+
+    <h4>Feature Importance:</h4>
+    <img src="{{ feature_importance_graph }}" alt="Feature Importance Chart">
+
+</body>
+
+</html>
