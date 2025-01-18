@@ -4,4 +4,4 @@ numpy==1.24.4
 scikit-learn==1.2.2
 matplotlib==3.7.1
 seaborn==0.12.2
-
+gunicorn==20.1.0  # Adding gunicorn to run your app on Render
