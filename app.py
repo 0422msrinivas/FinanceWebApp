@@ -16,6 +16,9 @@ warnings.filterwarnings('ignore')
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 
+# Set the folder for templates to "docs"
+app.template_folder = 'docs'
+
 # Ensure the uploads directory exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
@@ -137,7 +140,3 @@ def upload():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-https://github.com/0422msrinivas/financeWeb
-git remote add origin https://github.com/0422msrinivas/FinanceWebApp.git
