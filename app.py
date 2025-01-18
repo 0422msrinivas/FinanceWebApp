@@ -13,7 +13,8 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='docs', template_folder='docs')
+
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 
 # Set the folder for templates to "docs"
